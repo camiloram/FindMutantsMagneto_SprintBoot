@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "92baf15e-52f1-4670-b04c-135765007aca",
+		"name": "mutants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "isMutant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"dna\":[\r\n\t\t\"ATGCGA\",\r\n\t\t\"CAGTGC\",\r\n\t\t\"TTATGT\",\r\n\t\t\"AGAAGG\",\r\n\t\t\"CCCCTA\",\r\n\t\t\"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://magnetofindmutants.rj.r.appspot.com/magnetoFind/mutant",
+					"protocol": "https",
+					"host": [
+						"magnetofindmutants",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"magnetoFind",
+						"mutant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://magnetofindmutants.rj.r.appspot.com/magnetoFind/stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://magnetofindmutants.rj.r.appspot.com/magnetoFind/stats",
+					"protocol": "https",
+					"host": [
+						"magnetofindmutants",
+						"rj",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"magnetoFind",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
